@@ -55,7 +55,7 @@ if __name__ == "__main__":
     print(f"train data size: {X_train.shape}, test data size: {X_test.shape}")
     num_samples, num_total_features = X_train.shape
     #模式开关
-    is_compute_accuracy = True
+    is_compute_accuracy = False
     is_test_fs_method = True
     is_compute_metric = True
     is_overwrite_metric = True
@@ -84,7 +84,7 @@ if __name__ == "__main__":
     
     ######### compute metrics for random feature combinations #########           
     if is_compute_metric:
-        compute_metrics_for_combinations_for_regression(X_metric_use = X_test, X_org=X_test, y_metric_use = y_test,
+        compute_metrics_for_combinations_for_regression(X_metric_use = X_test, X_org = X_test, y_metric_use = y_test,
                                                         num_sets = num_sets, num_total_features = num_total_features,
                                                         result_path = result_path, metric_path = metric_path,
                                                         is_overwrite_metric = is_overwrite_metric)

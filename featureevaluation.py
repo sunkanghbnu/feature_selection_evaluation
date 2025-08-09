@@ -181,30 +181,6 @@ if __name__ == "__main__":
     #fs_evaluate_result_path = "/mnt/f/pytorch/feature selection/datasets/creditcard/fsmethod_creditcard_evalaute"
     #num_features = [3,5,7,10,12,14,17,19,21]#creditcard
 
-    ######## Digits dataset #############
-    #result_path = "/mnt/f/pytorch/feature selection/datasets/digits/result_digits"
-    #metric_path = "/mnt/f/pytorch/feature selection/datasets/digits/metric_digits"
-    #fs_result_path="/mnt/f/pytorch/feature selection/datasets/digits/result_digits_fsmethod"
-    #fs_evaluate_result_path = "/mnt/f/pytorch/feature selection/datasets/digits/fsmethod_digits_evalaute"
-    #num_features = [6,12,18,24,30,36,42,48,54] #digits
-    
-    ######## Ozone dataset #############
-    #result_path = "/mnt/f/pytorch/feature selection/datasets/ozone/result_ozone"
-    #metric_path = "/mnt/f/pytorch/feature selection/datasets/ozone/metric_ozone"
-    #fs_result_path="/mnt/f/pytorch/feature selection/datasets/ozone/result_ozone_fsmethod"
-    #fs_evaluate_result_path = "/mnt/f/pytorch/feature selection/datasets/ozone/fsmethod_ozone_evalaute"
-    #num_features = [8,15,22,29,36,44,51,58,65] #ozone
-    
-    ######## Dermatology dataset #############
-    #result_path = "/mnt/f/pytorch/feature selection/datasets/dermatology/result_dermatology"
-    #metric_path = "/mnt/f/pytorch/feature selection/datasets/dermatology/metric_dermatology"
-    #fs_result_path="/mnt/f/pytorch/feature selection/datasets/dermatology/result_dermatology_fsmethod"
-    #fs_evaluate_result_path = "/mnt/f/pytorch/feature selection/datasets/dermatology/fsmethod_dermatology_evalaute"
-    #num_features = [4,7,11,14,17,21,24,28,31] #dermatology
-    #result_path="/mnt/f/pytorch/feature selection/datasets/fashionminst/result"
-    #metric_path="/mnt/f/pytorch/feature selection/datasets/fashionminst/metric"
-
-    
     ######### Automobile dataset ########  
     #result_path="/mnt/f/pytorch/feature selection/datasets/automobile/result_automobile"
     #metric_path="/mnt/f/pytorch/feature selection/datasets/automobile/metric_automobile"
@@ -233,83 +209,26 @@ if __name__ == "__main__":
     #fs_evaluate_result_path = "/mnt/f/pytorch/feature selection/datasets/waterquality/fsmethod_waterquality_evalaute"
     #num_features = [2,3,4,5,6,7,8,9,10] #waterquality
     
-    ######### StudentPerformance dataset ########  
-    #result_path="/mnt/f/pytorch/feature selection/datasets/studentperformance/result"
-    #metric_path="/mnt/f/pytorch/feature selection/datasets/studentperformance/metric"
-    #fs_result_path="/mnt/f/pytorch/feature selection/datasets/studentperformance/result_fsmethod"
-    #fs_evaluate_result_path = "/mnt/f/pytorch/feature selection/datasets/studentperformance/fsmethod_evalaute"
-    #num_features = [3,6,9,12,15,18,21,24,27] #Studentperformance
+    ######### Traffic dataset ########
+    result_path = "/mnt/f/pytorch/feature selection/datasets/traffic/result"  
+    metric_path="/mnt/f/pytorch/feature selection/datasets/traffic/metric_traffic" 
+    fs_result_path="/mnt/f/pytorch/feature selection/datasets/traffic/result_fsmethod"
+    fs_evaluate_result_path = "/mnt/f/pytorch/feature selection/datasets/traffic/fsmethod_traffic_evalaute"
+    num_features = [4,8,12,16,20,24,28,32,36] #Traffic
     
-    
-    ######### Traffic dataset ########  
-    #metric_path="/mnt/f/pytorch/feature selection/datasets/traffic/metric" 
-    #fs_result_path="/mnt/f/pytorch/feature selection/datasets/traffic/result_fsmethod"
-    #fs_evaluate_result_path = "/mnt/f/pytorch/feature selection/datasets/traffic/fsmethod_evalaute"
-    #num_features = [4,8,12,16,20,24,28,32,36] #Traffic
-    
-    
-    ######## Dermatology dataset #############
-    #result_path = "/mnt/f/pytorch/feature selection/datasets/dermatology/result_dermatology"
-    #metric_path = "/mnt/f/pytorch/feature selection/datasets/dermatology/metric_dermatology"
-    #fs_result_path="/mnt/f/pytorch/feature selection/datasets/dermatology/result_dermatology_fsmethod"
-    #fs_evaluate_result_path = "/mnt/f/pytorch/feature selection/datasets/dermatology/fsmethod_dermatology_evalaute"
-    #num_features = [4,7,11,14,17,21,24,28,31] #dermatology
-    
-    ######### Wine dataset ########
-    #result_path="/mnt/f/pytorch/feature selection/datasets/wine/result_wine"
-    #metric_path="/mnt/f/pytorch/feature selection/datasets/wine/metric_wine"
-    #fs_result_path="/mnt/f/pytorch/feature selection/datasets/wine/result_wine_fsmethod"
-    #fs_evaluate_result_path = "/mnt/f/pytorch/feature selection/datasets/wine/fsmethod_evalaute_wine"
-    #num_features = [2,3,4,6,7,8,10,11,12] #wine
-    
-    ######### Parkinsons dataset ########  
+    ######### Parkinsons dataset ########
     #result_path="/mnt/f/pytorch/feature selection/datasets/parkinsons/result_parkinsons"
     #metric_path="/mnt/f/pytorch/feature selection/datasets/parkinsons/metric_parkinsons"
     #fs_result_path="/mnt/f/pytorch/feature selection/datasets/parkinsons/result_parkinsons_fsmethod"
     #fs_evaluate_result_path = "/mnt/f/pytorch/feature selection/datasets/parkinsons/fsmethod_evalaute_parkinsons"
     #num_features = [3,5,7,9,11,14,16,18,20] #parkinsons
     
-    ######### Soybean dataset ########
-    #result_path="/mnt/f/pytorch/feature selection/datasets/soybean/result_soybean"
-    #metric_path="/mnt/f/pytorch/feature selection/datasets/soybean/metric_soybean"
-    #fs_result_path="/mnt/f/pytorch/feature selection/datasets/soybean/result_soybean_fsmethod"
-    #fs_evaluate_result_path = "/mnt/f/pytorch/feature selection/datasets/soybean/fsmethod_evalaute_soybean"
-    #num_features = [4,7,11,14,18,21,25,28,32]#soybean
-        
-    ######### Digits dataset ########  
-    #result_path="/mnt/f/pytorch/feature selection/datasets/digits/result"
-    #metric_path="/mnt/f/pytorch/feature selection/datasets/digits/metric"
-    #fs_result_path="/mnt/f/pytorch/feature selection/datasets/digits/result_fsmethod"
-    #fs_evaluate_result_path = "/mnt/f/pytorch/feature selection/datasets/digits/fsmethod_evalaute_digits"
-    #num_features = [7,13,19,26,32,38,45,51,57] #digits
-    
-    ######### Emotions dataset ########  
-    #result_path="/mnt/f/pytorch/feature selection/datasets/emotions/result_emotions"
-    #metric_path="/mnt/f/pytorch/feature selection/datasets/emotions/metric_emotions"
-    #fs_result_path="/mnt/f/pytorch/feature selection/datasets/emotions/result_emotions_fsmethod"
-    #fs_evaluate_result_path = "/mnt/f/pytorch/feature selection/datasets/emotions/fsmethod_evalaute_emotions"
-    #num_features = [ 8, 15, 22, 29, 36, 44, 51, 58, 65]
-    
-    ######### Ozone dataset ########  
-    #result_path="/mnt/f/pytorch/feature selection/datasets/ozone/result_ozone"
-    #metric_path="/mnt/f/pytorch/feature selection/datasets/ozone/metric_ozone"
-    #fs_result_path="/mnt/f/pytorch/feature selection/datasets/ozone/result_ozone_fsmethod"
-    #fs_evaluate_result_path = "/mnt/f/pytorch/feature selection/datasets/ozone/fsmethod_evalaute_ozone"
-    #num_features = [ 8, 15, 22, 29, 36, 44, 51, 58, 65]
-    
     ######## Bankruptcy dataset #############
-    result_path = "/mnt/f/pytorch/feature selection/datasets/bankruptcy/result_bankruptcy"
-    metric_path = "/mnt/f/pytorch/feature selection/datasets/bankruptcy/metric_bankruptcy"
-    fs_result_path="/mnt/f/pytorch/feature selection/datasets/bankruptcy/result_bankruptcy_fsmethod"
-    fs_evaluate_result_path = "/mnt/f/pytorch/feature selection/datasets/bankruptcy/fsmethod_bankruptcy_evalaute"
-    num_features = [10,19,28,38,47,56,66,75,84]#bankruptcy
-    
-    ######## Scene dataset #############
-    #result_path = "/mnt/f/pytorch/feature selection/datasets/scene/result_scene"
-    #metric_path = "/mnt/f/pytorch/feature selection/datasets/scene/metric_scene"
-    #fs_result_path="/mnt/f/pytorch/feature selection/datasets/scene/result_scene_fsmethod"
-    #fs_evaluate_result_path = "/mnt/f/pytorch/feature selection/datasets/scene/fsmethod_scene_evalaute"
-    #num_features = [30, 59,  89, 118, 147, 177, 206, 236, 265]#bankruptcy
+    #result_path = "/mnt/f/pytorch/feature selection/datasets/bankruptcy/result_bankruptcy"
+    #metric_path = "/mnt/f/pytorch/feature selection/datasets/bankruptcy/metric_bankruptcy"
+    #fs_result_path="/mnt/f/pytorch/feature selection/datasets/bankruptcy/result_bankruptcy_fsmethod"
+    #fs_evaluate_result_path = "/mnt/f/pytorch/feature selection/datasets/bankruptcy/fsmethod_bankruptcy_evalaute"
+    #num_features = [10,19,28,38,47,56,66,75,84]#bankruptcy
     
     ######## Obesity dataset #############
     #result_path = "/mnt/f/pytorch/feature selection/datasets/obesity/result_obesity"
@@ -317,13 +236,6 @@ if __name__ == "__main__":
     #fs_result_path="/mnt/f/pytorch/feature selection/datasets/obesity/result_obesity_fsmethod"
     #fs_evaluate_result_path = "/mnt/f/pytorch/feature selection/datasets/obesity/fsmethod_obesity_evalaute"
     #num_features = [ 2,  4,  5,  7,  8, 10, 12, 13, 14]#obesity
-    
-    ######## Credit dataset #############
-    #result_path = "/mnt/f/pytorch/feature selection/datasets/credit/result_credit"
-    #metric_path = "/mnt/f/pytorch/feature selection/datasets/credit/metric_credit"
-    #fs_result_path="/mnt/f/pytorch/feature selection/datasets/credit/result_credit_fsmethod"
-    #fs_evaluate_result_path = "/mnt/f/pytorch/feature selection/datasets/credit/fsmethod_credit_evalaute"
-    #num_features = [ 2,  4,  6,  8, 10, 12, 14, 16, 18]#credit
     
     ######## Yeast dataset #############
     #result_path = "/mnt/f/pytorch/feature selection/datasets/yeast/result_yeast"
@@ -340,9 +252,9 @@ if __name__ == "__main__":
     #num_features = [ 4,  7, 10, 14, 17, 20, 24, 27, 30]#ionosphere
     
     
-    clustering_models = ["knn", "agg","spc", "dbs",'birch']
-    classification_models = ["svm", "rft", "lgn", "knn", 'dtr']
-    regression_models =["linear", "ridge",'lasso','gradboost','randomforest']
+    clustering_models = ["KMS", "AGC","SPC", "DBC",'BIR']
+    classification_models = ["SVM", "RFC", "LRC", "KNN", 'DST']
+    regression_models =["LNR", "RDR",'LSR','GBR','GFR']
     metric_names_classification = ['Variance', 'Sim Entropy', 'Rep Entropy', 'SPECtrum','Lap Score', 
                          'Mutual Corre', 'MICI', 'MDCM', 'Linear Depend','MPMR', 'MCFS', 'RSPCA',
                           'ANOVA F', 'ReliefF','Info Gain', 'MRMR', 'ERFS']
@@ -351,8 +263,8 @@ if __name__ == "__main__":
     
     
     is_classification = False
-    is_clustering = True
-    is_regression = False
+    is_clustering = False
+    is_regression = True
     
     
     is_evaluate_fsmethod = True

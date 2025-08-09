@@ -56,7 +56,6 @@ from scipy.linalg import pinv, eigh,qr
 from scipy.sparse.linalg import eigs,eigsh
 from sklearn.neighbors import kneighbors_graph
 from sklearn.linear_model import Lars, LassoLars
-
 from scipy.sparse import diags, csr_matrix, issparse
 from sklearn.metrics.pairwise import pairwise_distances,cosine_similarity,rbf_kernel
 
@@ -439,7 +438,7 @@ def mici_fs(X, num_selected_feature, similarity_matrix = None):
     for i in range(n_features): 
         for j in range(i):
             tmp = np.abs(var_x[i]+var_x[j])**2 - 4*var_x[i]*var_x[j]*(1-S_cos[i,j])
-            lambda_matrix[i,j] = var_x[i] + var_x[j] - np.sqrt(tmp)
+            lambda_matrix[i,j] = var_x[i] + var_x[j] - np.sqrt(tmp + 1e-8)
             lambda_matrix[j,i] = lambda_matrix[i,j]
     np.random.seed(42)
     selected_indices = np.sort(np.random.choice(n_features, size = num_selected_feature, replace = False))        

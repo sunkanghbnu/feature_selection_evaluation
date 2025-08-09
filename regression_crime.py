@@ -7,9 +7,7 @@ Wine Quality 数据集回归分析完整实现
 """
 import numpy as np
 import pandas as pd
-import os, sys, copy,time,math
-import matplotlib.pyplot as plt
-import seaborn as sns
+import os, sys
 from sklearn.model_selection import train_test_split, cross_val_score
 from sklearn.preprocessing import StandardScaler,LabelEncoder
 from sklearn.linear_model import LinearRegression, Ridge, Lasso

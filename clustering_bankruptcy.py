@@ -53,7 +53,6 @@ if __name__ == "__main__":
         'brich_clustering': Birch(n_clusters = num_clusters)
         }
     
-    #模式开关
     is_compute_accuracy = True
     is_test_fs_method = True
     is_compute_metric = True

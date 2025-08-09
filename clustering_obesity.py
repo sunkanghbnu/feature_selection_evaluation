@@ -1,7 +1,7 @@
 # ========== 1. 环境准备 ==========
 import numpy as np
 import pandas as pd
-import os,sys,copy,math,time
+import os,sys
 from sklearn.preprocessing import StandardScaler
 from sklearn.cluster import KMeans, AgglomerativeClustering, SpectralClustering,DBSCAN,AffinityPropagation,Birch
 from hdbscan import HDBSCAN

@@ -55,7 +55,6 @@ from scipy.sparse.linalg import eigsh, eigs
 from scipy.linalg import pinv, eigh
 from sklearn.metrics.pairwise import pairwise_distances,cosine_similarity
 from skfeature.utility import construct_W
-from skfeature.function.similarity_based import lap_score
 from sklearn.metrics import f1_score, silhouette_score, adjusted_rand_score, confusion_matrix
 from scipy.optimize import linear_sum_assignment
 
@@ -225,7 +224,7 @@ def max_info_compress_index(X, selected_cols, similarity_matrix = None):
     for i in range(n): 
         for j in range(i):
             tmp = np.abs(var_x[i]+var_x[j])**2 - 4*var_x[i]*var_x[j]*(1-S_cos[i,j])
-            lambda_matrix[i,j] = var_x[i] + var_x[j] - np.sqrt(tmp)
+            lambda_matrix[i,j] = var_x[i] + var_x[j] - np.sqrt(tmp + 1e-8)
     return lambda_matrix.sum()
 
 def max_determinant_of_covmatrix_and_linear_dependency(X, selected_cols, convariance_matrix = None):

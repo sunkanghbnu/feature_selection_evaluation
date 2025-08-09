@@ -230,7 +230,7 @@ def compute_metrics_for_combinations_for_classification(X_metric_use, y_metric_u
             
             ############# feature selection metrics computation for selected features ##########
             mut_cor = mutual_corre(X_metric_use,selected_indices,similarity_matrix = similarity_matrix)
-            mici = max_info_compress_index(X_metric_use,selected_indices,similarity_matrix = similarity_matrix)
+            mici = max_info_compress_index(X_org,selected_indices,similarity_matrix = similarity_matrix)
             mdcm_eig,lin_dep = max_determinant_of_covmatrix_and_linear_dependency(X_metric_use, selected_indices,convariance_matrix = covariance_matrix)
             lin_rep = linear_rep_error(X_metric_use, selected_indices)
             rsp_val = rspca_value(X_metric_use, selected_indices)
@@ -338,7 +338,7 @@ def fs_methods_evaluation_for_classification(X_fsmethod_use, X_test, X_org, y_fs
         cur_ifg_selected_result = ifg_selected_result[:num_selected_feature]
         cur_mcf_selected_result = mcf_selected_result[:num_selected_feature]
         
-        cur_mic_selected_result = mici_fs(X_fsmethod_use, num_selected_feature = num_selected_feature, similarity_matrix = similarity_matrix)
+        cur_mic_selected_result = mici_fs(X_org, num_selected_feature = num_selected_feature, similarity_matrix = similarity_matrix)
         cur_mtc_selected_result = mutual_corre_fs(X_fsmethod_use, num_selected_feature = num_selected_feature,similarity_matrix = similarity_matrix)
         cur_mdc_selected_result = mdcm_fs(X_fsmethod_use, num_selected_feature = num_selected_feature,covariance_matrix = covariance_matrix) 
         cur_ldp_selected_result = linear_dependency_fs(X_fsmethod_use,num_selected_feature=num_selected_feature, covariance_matrix = covariance_matrix)
@@ -569,7 +569,7 @@ def compute_metrics_for_combinations_for_regression(X_metric_use, X_org, y_metri
             
             ###### 以下指标需要根据特征组合的不同，一组特征组合调用一次################
             mut_cor = mutual_corre(X_metric_use,selected_indices,similarity_matrix = similarity_matrix)
-            mici = max_info_compress_index(X_metric_use,selected_indices,similarity_matrix = similarity_matrix)
+            mici = max_info_compress_index(X_org,selected_indices,similarity_matrix = similarity_matrix)
             mdcm_eig,lin_dep = max_determinant_of_covmatrix_and_linear_dependency(X_metric_use, selected_indices,convariance_matrix = covariance_matrix)
             lin_rep = linear_rep_error(X_metric_use, selected_indices)
             rsp_val = rspca_value(X_metric_use, selected_indices)
@@ -676,7 +676,7 @@ def fs_methods_evaluation_for_regression(X_fsmethod_use, X_test,X_org, y_fsmetho
         cur_ifg_selected_result = ifg_selected_result[:num_selected_feature]
         cur_mcf_selected_result = mcf_selected_result[:num_selected_feature]
         
-        cur_mic_selected_result = mici_fs(X_fsmethod_use, num_selected_feature = num_selected_feature, similarity_matrix = similarity_matrix)
+        cur_mic_selected_result = mici_fs(X_org, num_selected_feature = num_selected_feature, similarity_matrix = similarity_matrix)
         cur_mtc_selected_result = mutual_corre_fs(X_fsmethod_use, num_selected_feature = num_selected_feature,similarity_matrix = similarity_matrix)
         cur_mdc_selected_result = mdcm_fs(X_fsmethod_use, num_selected_feature = num_selected_feature,covariance_matrix = covariance_matrix) 
         cur_ldp_selected_result = linear_dependency_fs(X_fsmethod_use,num_selected_feature=num_selected_feature, covariance_matrix = covariance_matrix)
@@ -884,7 +884,7 @@ def compute_metrics_for_combinations_for_clustering(X, X_org, num_sets, num_tota
             
             ###### compute the following metrics for each feature combination ################
             mut_cor = mutual_corre(X,selected_indices,similarity_matrix = similarity_matrix)
-            mici = max_info_compress_index(X,selected_indices,similarity_matrix = similarity_matrix)
+            mici = max_info_compress_index(X_org,selected_indices,similarity_matrix = similarity_matrix)
             mdcm_eig,lin_dep = max_determinant_of_covmatrix_and_linear_dependency(X, selected_indices,convariance_matrix = covariance_matrix)
             lin_rep = linear_rep_error(X, selected_indices)
             rsp_val = rspca_value(X, selected_indices)
@@ -959,7 +959,7 @@ def fs_methods_evaluation_for_clustering(X, X_org, y_true, num_sets, num_total_f
         cur_spc_selected_result = spc_selected_result[:num_selected_feature]
         cur_mcf_selected_result = mcf_selected_result[:num_selected_feature]
         
-        cur_mic_selected_result = mici_fs(X, num_selected_feature = num_selected_feature, similarity_matrix = similarity_matrix)
+        cur_mic_selected_result = mici_fs(X_org, num_selected_feature = num_selected_feature, similarity_matrix = similarity_matrix)
         cur_mtc_selected_result = mutual_corre_fs(X, num_selected_feature = num_selected_feature,similarity_matrix = similarity_matrix)
         cur_mdc_selected_result = mdcm_fs(X, num_selected_feature = num_selected_feature,covariance_matrix = covariance_matrix) 
         cur_ldp_selected_result = linear_dependency_fs(X,num_selected_feature=num_selected_feature, covariance_matrix = covariance_matrix)
